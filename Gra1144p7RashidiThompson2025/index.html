@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Travel Agency brocuhure</title>
+	<style type="text/css">
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: url(sHawaii.jpg);
+    background-position: center 0%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+wrapper {
+    width: 1366px;
+    margin: auto;
+    display: block;
+}
+header {
+    height: 100px;
+    background-color: #32999C;
+}
+footer {
+    position: fixed;
+    padding: 10px;
+    bottom: 0px;
+    font-family: sans-serif;
+    font-size: 12px;
+    background-color: rgba(184,206,204,1.00);
+}
+#Tabs1 {
+    background-color: transparent;
+    background-image: none;
+}
+#Tabs1 ul {
+    background-image: none;
+    border: none;
+    background-color: transparent;
+}
+    #Tabs1 ul li img {
+    height: 50px;
+    width: auto;
+}
+#Tabs1 ul li {
+    text-align: center;
+    background-color: rgba(255,255,255,0.50);
+}
+#Tabs1 #tabs-1 {
+    background-color: rgba(255,255,255,0.50);
+}
+    </style>
+	<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+	<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+	<link href="jQueryAssets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.tabs.min.js"></script>
+</head>
+
+<body>
+<wrapper>
+  <header>PANGEATRAVELS</header>
+  <main>
+    <div id="Tabs1">
+      <ul>
+        <li><a href="#tabs-1"><img src="noun-plane-7701916.png" alt="" width="540" height="234"><br>
+        Flights</a></li>
+        <li><a href="#tabs-2"><img src="noun-hotel-7794551.png" alt="" width="549" height="549"><br>
+        Hotel</a></li>
+        <li><a href="#tabs-3"><img src="noun-car-776602.png" alt="" width="588" height="469"><br>
+        Cars</a></li>
+        <li><a href="#tabs-4"><img src="noun-festival-7381578.png" alt="" width="576" height="576"><br>
+        Vacation</a></li>
+        <li><a href="#tabs-5"><img src="noun-cruises-4290083.png" alt="" width="526" height="414"><br>
+        Cruises</a></li>
+      </ul>
+      <div id="tabs-1">
+        <h2>FLIGHTS</h2>
+      <input type="text" placeholder="Leaving from">
+      <input placeholder="Going to">
+      <input type="date">
+      <input type="date">
+      <label>Number of travelers</label>
+      <input type="number">
+      <input type="submit">
+      </div>
+      <div id="tabs-2">
+        <h2>HOTEL</h2>
+      <input type="text" placeholder="Where to?">
+      <input type="date">
+      <input type="date">
+      <label>Numbers of travelers</label>
+      </div>
+      <div id="tabs-3">
+        <h2>CARS</h2>
+      <input type="text" placeholder="Pick-up">
+      <input type="text" placeholder="Drop-off">
+      <input type="date">
+      <label>Pick-up Time</label>
+      <input name="Pick-up Time" type="time">
+      <label>Drop-off Time</label>
+      <input type="time">
+      <input type="submit">
+      </div>
+      <div id="tabs-4">
+        <h2>VACATION</h2>
+      <input type="text" placeholder="Going to">
+      <label>Date</label>
+      <input type="date">
+      <input type="submit">
+      </div>
+      <div id="tabs-5">
+        <h2>CRUISES</h2>
+      <input type="text" placeholder="Going to">
+      <input type="text" placeholder="Departing between">
+      <select>
+        Nights
+      </select>
+      <input type="submit">
+      </div>
+    </div>
+  </main>
+  <footer><p> &copy 2025, Rashid Thompson. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p></footer>
+</wrapper>
+<script type="text/javascript">
+$(function() {
+	$( "#Tabs1" ).tabs(); 
+});
+</script>
+</body>
+</html>
