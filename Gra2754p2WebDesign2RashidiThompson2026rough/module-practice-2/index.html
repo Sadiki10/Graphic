@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>SVG Animations Using CSS</title>
+<style>
+body{
+	margin:0;
+	padding:0;
+	background-color:#CCC;
+	}
+wrapper{
+	width:100%;
+	max-width:1024px;
+	margin:0 auto;
+	display:block;
+	}
+header{
+	height:150px;
+	background-color:#19B5E3;
+	}
+main{
+	height:768px;
+	background-color:#FFF;
+	padding:4em 0;
+	box-sizing:border-box;
+	text-align:center;
+	}
+footer{
+	height:80px;
+	background-color:#19B5E3;
+	clear:both;
+	}
+	#level{
+		animation: charging 2s;
+	}
+		@keyframes charging {
+			0%{
+				fill:orange;
+				transform:scaleX(0);
+			}
+			100%{
+				fill:lightblue;
+				transform:scaleX(1);
+			}
+		}
+	#battery{
+		animation: spinning 2s infinite linear; 
+	}
+	@keyframes spinning {
+		0%{
+			transform:rotate(0deg);
+			transform-origin: center center;
+		}
+		100%{
+			transform:rotate(360deg);
+			transform-origin: center center;
+		}
+	}
+	#green {
+		animation: moving 2s infinite linear;
+	}
+	@keyframes moving{
+		0%{
+			transform: translateY(-20px);
+		}
+		100%{
+			transform:translateY(20px);
+		}
+	}
+</style>
+</head>
+
+<body>
+    <wrapper>
+        <header>
+        </header>
+                
+        <main>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="338" height="287" viewBox="0 0 338 287">
+  <g id="boxx">
+    <rect width="338" height="287" fill="none"/>
+  </g>
+  <g id="battery">
+    <g id="green">
+      <rect id="level" x="63.08" y="116" width="198.88" height="56" fill="#7ac25b"/>
+      <path id="outline" d="M278,125.25h-11.46v-14.25H58.5v66h208.04v-14.25h11.46v-37.5ZM257.38,167H67.66v-46h189.71v46Z" fill="#231f20"/>
+    </g>
+  </g>
+</svg>
+        </main>
+        
+        <footer>
+        </footer>
+    </wrapper>
+</body>
+</html>
