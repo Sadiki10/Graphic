@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML5 Drag-and-drop Project | Rashid Thompson, 2026</title>
+<header>
+	?ENTIENDES ESPANOL?
+	</header>
+	<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+<style type="text/css">
+
+body {
+    margin: 0;
+    background-color: #0C3181;
+	background-image: url( "here-is-a-nice-high-quality-super-duolingo-wallpaper-v0-v5kk3b4l85ba1.png");
+	background-size: cover
+}
+wrapper {
+    width: 1920px;
+    margin: auto;
+    display: block;
+}
+wrapper div {
+    width: 900px;
+    border: thin solid white;
+    height: 600px;
+    margin-top: 25px;
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    display: inline-block;
+    vertical-align: top;
+}
+div img {
+    width: 67%;
+    height: auto;
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+    min-width: 113px;
+    margin-top: -3px;
+    padding-left: 130px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+	
+footer {
+    font-size: xx-large;
+    color: #FFFFFF;
+}
+
+header {
+    color: #FFFFFF;
+    margin-top: 102px;
+    margin-left: 1204px;
+    font-size: xx-large;
+	font-size-adjust: 
+    width: auto;
+    height: auto;
+}
+#drop2 img {
+    width: 647px;
+}
+#drop4 #drag4 {
+    width: 644px;
+    height: 602px;
+}
+#drop6 #drag6 {
+    width: 600px;
+    height: 603px;
+}
+#drop10 #drag10 {
+    width: 603px;
+    height: 603px;
+}
+#drop12 #drag12 {
+    width: 600px;
+    height: 600px;
+}
+</style>
+</head>
+<body>
+<wrapper>
+  <div id="drop1" ondrop="drop(event)" ondragover="allowDrop(event)"><img src= "apple-colorful-vector-design_341269-1123.jpg.avif" alt="" width="88" height="31" id="drag1" draggable="true" ondragstart="drag(event)">	</div>
+  <div id="drop2" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="Leche.png" alt="" width="4504" height="4204" id="drag2" draggable="true" ondragstart="drag(event)"></div>
+  <div id="drop3" ondrop="drop(event)" ondragover="allowDrop(event)"><img src= "2d-vector-little-girl-character-icon_1058698-451.jpg.avif" alt="" width="88" height="31" id="drag3" draggable="true" ondragstart="drag(event)"></div>
+  <div id="drop4" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="Agua.png" alt="" width="1280" height="720" id="drag4" draggable="true" ondragstart="drag(event)"></div>
+<div id="drop5" ondrop="drop(event)" ondragover="allowDrop(event)"><img src= "water-bottle-vector-2d-cartoon-style-flat-illustration-style_1083301-9.jpg.avif" alt="" width="" height="" id="drag5" draggable="true" ondragstart="drag(event)" ></div>
+  <div id="drop6"  ondrop="drop(event)" ondragover="allowDrop(event)"><img src="Manzana.jpg" alt="" width="640" height="480" id="drag6" draggable="true" ondragstart="drag(event)"></div>
+  <div id="drop7"  ondrop="drop(event)" ondragover="allowDrop(event)"><img src="text-books-library-isolated-icon_24877-83372.jpg.avif" alt="" width="" height="" id="drag7" draggable="true" ondragstart="drag(event
+	  )" ></div>
+  <div id="drop8" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="Buneas%20Dias.jpg" alt="" width="736" height="736" id="drag8" draggable="true"ondragstart="drag(event)"></div>
+  <div id="drop9" ondrop="drop(event)"ondragover="allowDrop(event)"><img src="authentic-2d-vector-image-milk-white-background_899449-363165.avif" alt="" width="" height="" id="drag9" draggable="true" ondragstart="drag(event)" ></div>
+  <div id="drop10" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="Nina.jpg" alt="" width="1280" height="720" id="drag10"></div>
+<div id="drop11" ondrop="drop(event)"ondragover="allowDrop(event)"><img src="set-glyph-suns_78370-2932.avif" alt="" width="" height="" id="drag11" draggable="true" ondragstart="drag(event)" ></div>
+  <div id="drop12" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="Libro.jpg" alt="" width="1280" height="720" id="drag12" draggable="true"ondragstart="drag(event)"></div>
+</wrapper>
+<footer>
+	© 2026, Rashidi Thompson
+This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.
+	</footer>
+</body>
+</html>
